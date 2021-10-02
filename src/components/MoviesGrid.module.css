@@ -1,0 +1,15 @@
+
+.moviesGrid {
+    display : grid; /*coloco un grid en el elemento padre, que es el <ul>, lo que lo convierte en un grid container. Por lo tanto los elementos <li> seran grid items de ese grid */
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px; /*separacion entre los elementos */
+    padding: 40px;  /*separacion con los bordes */
+    justify-content: center; /*tenemos los elementos justificados en el centro */
+    
+}
+
+@media (max-width:560px) {
+    .moviesGrid {
+        grid-template-columns: 100%;
+    }
+} /* cuando el ancho de mi pagina vaya de 0 a 560 px, en vez de tener una grilla de columna de 230px, va a ser una sola columna que tenga el 100% del ancho */

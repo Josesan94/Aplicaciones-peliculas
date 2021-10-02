@@ -1,0 +1,31 @@
+
+/*si o si debe el nombre del archivo debe contener el sufijo .module.css */
+
+.movieCard {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    
+
+
+
+}
+
+.movieCard:hover {
+    opacity: 0.5;
+    
+}
+
+.movieImage {
+    border-radius : 10px; /*redondea el borde de la imagen*/
+    background-color: azure;
+    
+}
+
+@media (max-width:560px) {
+    .movieImage {
+        width: 90%;
+        height:auto;
+        
+    }
+} /* cuando el ancho de mi pagina vaya de 0 a 560 px, en vez de tener un ancho de imagen de 230px, tendra un ancho del 90% cubriendo casi la totalidad de la pagina*/
