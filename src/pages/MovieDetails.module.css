@@ -1,0 +1,29 @@
+.detailsContainer {
+    display: flex; 
+    /* el flex lo que hace es poner los elementos del contenedor en fila, uno al lado del otro*/
+    justify-content: center; /* los elementos se centran en el eje horizontal*/
+    flex-wrap: wrap; /* lo que hace es que si ya no tenemos mas espacio para ese elemento, en vez de empujarlo hacia la derecha, a los elementos que no quepan, los empuja hacia abajo, evitando crear un media query, y adaptandose automaticamente a cada pantalla*/
+
+
+}
+
+.col {
+    max-width: 400px; /*para que las columnas de los elementos no tomen todo el ancho, sino que sea un ancho fijo maximo*/
+    margin: 15px;
+    height: auto;
+    height: 80%;
+}
+
+.movieImage {
+    border-radius: 15px;
+
+}
+
+.movieDetails {
+    font-size: 1.5rem;
+}
+
+.firstItem {
+    margin-top: 0;
+}
+

@@ -12,7 +12,7 @@
 }
 
 .movieCard:hover {
-    opacity: 0.5;
+    opacity: 0.6;
     
 }
 
@@ -29,3 +29,5 @@
         
     }
 } /* cuando el ancho de mi pagina vaya de 0 a 560 px, en vez de tener un ancho de imagen de 230px, tendra un ancho del 90% cubriendo casi la totalidad de la pagina*/
+
+/* si queremos crear elementos en una sola direccion, usamos FLEX. Para pantallas anchas queremos que todo este a lo ancho, y para pantallas chicas, queremos que se acomode a lo largo */

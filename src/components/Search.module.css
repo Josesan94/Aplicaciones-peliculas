@@ -1,0 +1,37 @@
+.searchContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.searchBox {
+    position:relative;  /* para posicionar los elementos relativos a este div */
+    
+}
+
+.searchButton {
+    position: absolute; /* se posiciona de forma absoluta con respecto al div que contiene el relative */
+    right:0;
+    top:0;
+    cursor: pointer;
+    height:100%;
+    border:none;
+    background: none;
+    padding-left: 2px;
+    
+
+    
+}
+
+.searchInput {
+    font-size: 1.2rem;
+   height:30px;
+   border-radius: 10px;
+   padding: 5px 30px 5px 10px; /*Arriba derecha abajo izquierda*/
+   border:1px solid white;
+}
+.searchButton:focus,
+.searchInput:focus {
+    outline:none;
+    border: 1px solid pink;
+    box-shadow: red;
+}
