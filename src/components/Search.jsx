@@ -28,7 +28,7 @@ export function Search() {
                 <input 
                 className={styles.searchInput} 
                 type="text" 
-                value={searchText} 
+                value={searchText ?? ""} //si search está null o undefined, agarre "" por defecto, además que le añadí la propiedad autoFocus para que el input agarre el foco automáticamente al cargar la página.
                 onChange={(e)=> setSearchText(e.target.value)} /> 
                 {/* con value le pasamos el valor que va a tener el input, y con onChange le especificamos como va a cambiar ese valor */}
                 <button className={styles.searchButton} type ="submit"> 

@@ -22,7 +22,9 @@ import LandingPage from "./pages/LandingPage";
             {/* Switch Lleva a la ruta correcta */}
         <Switch> 
           <Route exact path="/movies/:movieId"><MovieDetails /></Route>
-          <Route  path="/"><LandingPage /></Route>  
+          <Route  path="/">
+            <LandingPage />
+            </Route>  
         </Switch>
         </main>
     </Router>
